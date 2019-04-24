@@ -3,7 +3,6 @@ import re
 import numpy as np
 import pandas as pd
 
-
 def setWorkDirectory():
     os.chdir('C:/Users/bala0/OneDrive/My_Mine/My_Study/My_Python/My_Codes/Fundamentals')
     print('\nWorking in the directory: ', os.getcwd())
@@ -28,7 +27,6 @@ def verifyEmail(email):
         lstemail.append(str(inpfil['Email'][rec]).lower())
     else:
         lstemail.append('sample@test.com')
-
 
 def writeOutFile():
     inpfil.to_csv('htmlconv2.csv', index=False)
